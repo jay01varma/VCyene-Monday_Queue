@@ -31,7 +31,7 @@ jobs:
       - name: Upload website
         uses: actions/upload-pages-artifact@v4
         with:
-          path: dist
+          path: LILA_Support_Desk/dist
 
       - name: Deploy website
         id: deployment
