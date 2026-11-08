@@ -1,0 +1,13 @@
+ticket_id,opened,customer,country,delivered,firmware,issue,status,last_reply_from,last_reply_date,notes
+T-101,2026-09-28,Maya Okafor,CA,2026-08-25,2.4.1,"Cycle stops halfway since the last update. Third time writing in. Wants a full refund.",open,customer,2026-10-03,"Two earlier tickets were closed with 'restart the unit'."
+T-102,2026-10-01,Daniel Reyes,US,2026-09-12,2.4.1,"Unit pauses mid-cycle and the light blinks amber.",open,customer,2026-10-01,
+T-103,2026-10-02,Priya Nair,CA,2026-09-20,2.4.1,"Stops after about an hour. Worked fine before the update.",open,customer,2026-10-02,
+T-104,2026-09-24,Tom Lindqvist,US,2026-09-22,2.3.0,"Box arrived crushed and the lid is cracked. Photos attached.",waiting on us,customer,2026-09-24,"Carrier claim not filed yet."
+T-105,2026-09-18,Grace Chen,CA,2026-09-01,2.3.0,"Sent the unit back for a refund. Tracking shows it reached the warehouse on Sep 26.",waiting on warehouse,us,2026-09-27,"Warehouse has not confirmed receipt. Refund on hold."
+T-106,2026-10-03,Samir Haddad,CA,2026-10-01,2.4.1,"Cannot connect to Wi-Fi during setup.",open,customer,2026-10-03,
+T-107,2026-10-02,Lena Fischer,US,2026-09-30,2.4.0,"Would like an onboarding call this week.",open,customer,2026-10-02,
+T-108,2026-09-29,Andre Baptiste,CA,2026-09-10,2.3.0,"Changed his mind and wants a refund. Needs a return label.",open,customer,2026-09-29,
+T-109,2026-09-30,Maya Okafor,CA,2026-08-25,2.4.1,"Following up on my refund request. Nobody has answered.",open,customer,2026-09-30,
+T-110,2026-09-25,Hannah Brooks,US,2026-08-30,2.3.0,"Was promised a replacement by Sep 26. Still no tracking number.",waiting on us,us,2026-09-26,"Replacement unit not allocated yet."
+T-111,2026-10-04,Oliver Grant,CA,2026-09-05,2.4.0,"Loves it. Asks how to order a second unit for his parents.",open,customer,2026-10-04,
+T-112,2026-10-01,Sofia Marino,US,2026-09-27,2.4.0,"Amber light is blinking. Unit seems to run normally.",open,customer,2026-10-01,
