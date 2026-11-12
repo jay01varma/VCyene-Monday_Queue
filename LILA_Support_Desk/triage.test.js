@@ -15,3 +15,17 @@ test('engineering groups pauses and stops, not amber alone',()=>{
   assert.equal(check('Amber light is blinking. Unit seems to run normally.'),false);
   assert.equal(check('Cannot connect to Wi-Fi during setup.'),false);
 });
+import {isEmail,mailtoHref,draftEmail} from './dist/email.js';
+test('customer email addresses are validated',()=>{
+  assert.ok(isEmail('maya.okafor@example.ca'));
+  for(const bad of ['', 'maya', 'maya@', 'a@b', 'a b@c.com', 'a@b.com,c@d.com']) assert.equal(isEmail(bad),false,bad);
+});
+test('mailto links encode subject and body with CRLF line breaks',()=>{
+  const href=mailtoHref(' maya@example.ca ','Re: refund & return (T-101)','Hi Maya,\nLine two?');
+  assert.equal(href,'mailto:maya@example.ca?subject=Re%3A%20refund%20%26%20return%20(T-101)&body=Hi%20Maya%2C%0D%0ALine%20two%3F');
+});
+test('drafts greet the customer by first name and cite the ticket',()=>{
+  const d=draftEmail({customer:'Maya Okafor',ticket_id:'T-101'});
+  assert.match(d.subject,/T-101/);
+  assert.match(d.body,/^Hi Maya,/);
+});
